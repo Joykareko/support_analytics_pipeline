@@ -1,0 +1,9 @@
+table,issue,rows_affected,action
+tickets,Duplicate rows from overlapping exports,873,Removed
+tickets,"Created time in three formats (ISO, DD/MM/YYYY, epoch ms)",21959,Parsed to one timestamp type
+tickets,Resolved before it was created (clock error),40,Resolution time removed and flagged
+tickets,"CSAT stored as text ('4.0', 'N/A', blank)",18381,Converted to whole numbers 1 to 5; blanks mean no survey response
+tickets,30 different tag spellings for 8 contact reasons,65577,Mapped to standard contact reasons
+tickets,Untagged or tagged 'other',7168,Classified from the subject line with keyword rules
+tickets,"Untagged with a vague subject ('Help', 'Hi')",512,Left as Unclassified and flagged for agent review
+bot_conversations,Chatbot conversations,20277,Loaded; intent used as contact reason

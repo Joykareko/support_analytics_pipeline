@@ -1,0 +1,9 @@
+check,failing_rows,status
+Every ticket has a unique ID,0,PASS
+Every ticket has a valid created time,0,PASS
+No contacts dated outside the reporting year,0,PASS
+Every ticket is assigned to a known agent,0,PASS
+Orders recorded for every day,0,PASS
+CSAT scores between 1 and 5,0,PASS
+Tickets with a clock error (resolved before created),40,WARN
+Tickets still unclassified after the subject rules,512,WARN
