@@ -53,6 +53,24 @@ Clear definitions matter more than clever formulas, so every metric is defined o
 * **CSAT:** share of survey responses rating 4 or 5.
 * **Spike:** a day 40% above its trailing 28 day contact rate, or a reason's week 50% above its trailing 8 week rate.
 
+## Power BI dashboard
+
+I built a four-page Power BI report on the pipeline's metric tables ([PDF](data/powerbi/Customer_support.pdf)). It uses a star schema with a shared Dates table, measures that recalculate rates from their parts (never summing or averaging rates), and a date slicer synced across pages.
+
+| Page | Question it answers |
+| --- | --- |
+| Overview | How is support doing? Contacts per 1,000 orders against its 28-day average, SLA, CSAT, open tickets and spike days. |
+| Drivers | What causes contacts, and which hurt most? A scorecard by reason, with cost and CSAT highlighted. |
+| Automation and self-service | Does the bot really resolve contacts? Claimed vs true resolution, how contacts were handled each month, and the help article rewrite. |
+| Data quality | Can we trust the numbers? Automated checks, the cleaning log and the tagging audit. |
+
+![Overview](docs/powerbi_1_overview.png)
+![Drivers](docs/powerbi_2_drivers.png)
+![Automation and self-service](docs/powerbi_3_automation.png)
+![Data quality](docs/powerbi_4_data_quality.png)
+
+
+
 ## How it works
 
 ```
